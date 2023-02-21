@@ -1,34 +1,33 @@
 "use strict";
 
-let input = document.querySelector("#main input");
-let button = document.querySelector("#main button");
-let ul = document.querySelector("#main ul");
-let icon = document.querySelector("main i");
+let inputText = document.querySelector(".txt");
+let myButton = document.querySelector(".btn-list");
+let list = document.querySelector(".container ul");
 
-let btn=document.querySelector("main .button");
 
-button.addEventListener("click", function () {
-    let inputValue = input.value;
-    if (inputValue == "") {
-        alert("Do not put empty");
-        return;
-    }
-   
-   
-    let list = document.querySelectorAll("#main li");
-    for (const item of list) {
-        if (item.innerText == inputValue) {
-            alert("Already exist");
-            input.value = "";
-            return;
-        }
+
+
+myButton.addEventListener("click", function (e) {
+    if (inputText.value != "") {
+        e.preventDefault();
+        let myLi = document.createElement("li");
+        myLi.innerHTML = inputText.value;
+        list.appendChild(myLi);
+
+      
+        let mySpan = document.createElement("span");
+        mySpan.innerHTML = "x";
+        myLi.appendChild(mySpan);
     }
 
-    let li = document.createElement("li");    
-    li.className = "list-group-item my-1";
-    li.innerText = inputValue;  
-    ul.append(li);
-    input.value = "";
+    let close = document.querySelectorAll("span");
+    for (let i = 0; i < close.length; i++) {
+        close[i].addEventListener("click", function () {
+            close[i].parentElement.style.display = "none";
+        })
+    }
+
+    inputText.value = "";
 
 });
 

@@ -1,1 +1,65 @@
-/*# sourceMappingURL=homework.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(190, 208, 243);
+  display: flex;
+}
+
+#main h1 {
+  color: rgb(9, 21, 57);
+  margin-top: 250px;
+  margin-left: 650px;
+}
+#main form {
+  margin-left: 650px;
+  background: #fff;
+  box-shadow: -3px 6px 4px #222;
+}
+#main form input {
+  width: 250px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+}
+#main form button {
+  width: 50px;
+  height: 40px;
+  border: none;
+  background-color: aquamarine;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 50px;
+}
+.container ul {
+  list-style: none;
+  width: 500px;
+}
+.container ul li {
+  width: 100%;
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  margin: 5px 0;
+  box-shadow: -3px 6px 4px #222;
+}
+.container ul li span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  text-align: center;
+  background-color: red;
+}/*# sourceMappingURL=homework.css.map */
