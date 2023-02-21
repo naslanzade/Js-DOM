@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(229, 234, 244);
+
+}
+
+#function {
+    .container {
+        .calculator {
+            display: flex;
+
+            .number-1 {
+                margin-left: 400px;
+                margin-top: 250px;
+                outline: none;
+
+            }
+
+            .number-2 {
+                
+                outline: none;
+            }
+
+            .sum {
+                background-color: rgb(87, 87, 159);
+                margin-left: 250px;
+                width: 150px;
+                height: 30px;
+                border: none;
+                color: white;
+            }
+
+            .minus {
+                background-color: rgb(115, 3, 59);
+                margin-left: 20px;
+                width: 150px;
+                height: 30px;
+                border: none;
+                color: white;
+            }
+
+            .mult {
+                background-color: rgb(3, 172, 68);
+                margin-left: 20px;
+                width: 150px;
+                height: 30px;
+                border: none;
+                color: white;
+            }
+
+            .division {
+                background-color: rgb(224, 202, 6);
+                margin-left: 20px;
+                width: 150px;
+                height: 30px;
+                border: none;
+                color: white;
+            }
+
+            .res {
+            
+                margin-left: 500px;
+                margin-top: 0px;
+                outline: none;
+    
+              
+            }
+        }
+
+
+       
+    }
+}

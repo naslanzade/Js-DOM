@@ -13,7 +13,6 @@ myButton.addEventListener("click", function (e) {
         let myLi = document.createElement("li");
         myLi.innerHTML = inputText.value;
         list.appendChild(myLi);
-
       
         let mySpan = document.createElement("span");
         mySpan.innerHTML = "x";
